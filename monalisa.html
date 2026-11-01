@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monalisa Ladies Stitches - Boutique & Stitching Services</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter & Playfair Display -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #faf7f5;
+        }
+        .serif-title {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+<body class="text-slate-800 antialiased min-h-screen flex flex-col">
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="bg-rose-900 text-rose-100 text-xs py-2 px-4 text-center font-medium flex items-center justify-center gap-2">
+        <i class="fa-solid fa-scissors text-amber-300"></i>
+        <marquee><span>Custom Stitching & Tailoring Services • Quick Delivery Available!</span></marquee>
+    </div>
+
+    <!-- HEADER / BRANDING -->
+    <header class="bg-white border-b border-rose-100 sticky top-0 z-30 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                
+                <!-- Logo & Brand Name -->
+                <div class="flex items-center space-x-3 cursor-pointer">
+                    <!-- Circular Elegant Logo Container -->
+                    <div class="relative w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-slate-900 border-2 border-amber-300/80 p-0.5 shadow-md flex items-center justify-center shrink-0">
+                        <svg viewBox="0 0 200 200" class="w-full h-full rounded-full" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Background Circular Frames -->
+                            <circle cx="100" cy="100" r="96" fill="#18181b" stroke="#e2a97e" stroke-width="3"/>
+                            <circle cx="100" cy="100" r="90" fill="none" stroke="#e2a97e" stroke-width="1.5"/>
+                            <circle cx="100" cy="100" r="68" fill="none" stroke="#e2a97e" stroke-width="1.5"/>
+
+                            <!-- Curved Header Text along path -->
+                            <path id="textPathTop" d="M 30,100 A 70,70 0 1,1 170,100" fill="none" />
+                            <text font-family="'Playfair Display', Georgia, serif" font-size="20" font-weight="bold" fill="#f3d5be" letter-spacing="3" text-anchor="middle">
+                                <textPath href="#textPathTop" startOffset="50%">MONALISA</textPath>
+                            </text>
+
+                            <!-- Curved Bottom Text along path -->
+                            <path id="textPathBottom" d="M 170,100 A 70,70 0 0,1 30,100" fill="none" />
+                            <text font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#e2a97e" letter-spacing="1.5" text-anchor="middle">
+                                <textPath href="#textPathBottom" startOffset="50%">LADIES STITCHES</textPath>
+                            </text>
+
+                            <!-- Mannequin / Dress Form Vector (Left) -->
+                            <g stroke="#f3d5be" stroke-width="1.8" fill="none">
+                                <!-- Neck/Finial -->
+                                <path d="M 60,78 Q 60,74 62,72 T 60,70" />
+                                <ellipse cx="60" cy="70" rx="3" ry="1.5" fill="#f3d5be" />
+                                <!-- Hanger & Shoulders -->
+                                <path d="M 50,86 Q 60,82 70,86 L 68,110 Q 60,116 52,110 Z" fill="#18181b" />
+                                <!-- Stand pole & tripod base -->
+                                <line x1="60" y1="114" x2="60" y2="142" />
+                                <path d="M 52,148 L 60,142 L 68,148" />
+                            </g>
+
+                            <!-- Lady Portrait Silhouette Line-Art (Center / Right) -->
+                            <g stroke="#f3d5be" stroke-width="1.8" fill="none" stroke-linecap="round">
+                                <!-- Wavy Hair Strands -->
+                                <path d="M 95,65 C 105,52 125,55 130,70 C 135,82 128,92 135,102 C 142,110 148,105 150,118 C 151,128 142,135 138,142" />
+                                <path d="M 108,62 C 118,58 132,68 130,82 C 128,95 138,102 142,112" />
+                                <!-- Face Contour & Jawline -->
+                                <path d="M 102,82 C 105,92 108,102 120,108 C 126,104 128,96 128,90" />
+                                <!-- Eye & Eyebrow Silhouette -->
+                                <path d="M 106,86 Q 112,83 118,87" />
+                                <path d="M 108,89 Q 112,87 116,90" />
+                                <!-- Nose & Lips -->
+                                <path d="M 108,91 L 107,96 L 110,98" />
+                                <path d="M 109,102 Q 113,101 116,103" />
+                                <!-- Saree / Shoulder Drape -->
+                                <path d="M 102,122 Q 118,135 138,148" />
+                                <path d="M 96,132 Q 112,142 128,154" />
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div>
+                        <h1 class="serif-title text-xl sm:text-2xl font-bold text-rose-950 tracking-tight leading-none">MONALISA</h1>
+                        <p class="text-[11px] font-semibold tracking-widest text-rose-600 uppercase mt-0.5">Ladies Stitches</p>
+                    </div>
+                </div>
+
+                <!-- Quick Action Buttons Header -->
+                <div class="flex items-center space-x-2 sm:space-x-3">
+                    <a href="https://wa.me/919745201730?text=Hello%20Monalisa%20Ladies%20Stitches,%20I%20have%20an%20inquiry%20regarding%0A" target="_blank" class="inline-flex items-center gap-1.5 bg-emerald-600 hover:bg-emerald-700 text-white font-medium text-xs sm:text-sm px-3.5 py-2 rounded-xl shadow-sm transition duration-200">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span class="hidden sm:inline">WhatsApp</span>
+                    </a>
+                    <a href="https://instagram.com/sulathaaaa___" target="_blank" class="inline-flex items-center gap-1.5 bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 hover:opacity-90 text-white font-medium text-xs sm:text-sm px-3.5 py-2 rounded-xl shadow-sm transition duration-200">
+                        <i class="fa-brands fa-instagram text-base"></i>
+                        <span class="hidden sm:inline">Instagram</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO / BANNER -->
+    <section class="bg-gradient-to-br from-rose-950 via-slate-900 to-rose-900 text-white py-12 px-4 relative overflow-hidden">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 relative z-10">
+            <div class="text-center md:text-left space-y-3 max-w-xl">
+                <span class="bg-rose-500/20 text-rose-300 text-xs font-semibold px-3 py-1 rounded-full border border-rose-500/30 uppercase tracking-wider inline-block">Boutique & Tailoring</span>
+                <h2 class="serif-title text-3xl sm:text-5xl font-bold text-rose-50 leading-tight">Perfect Fits Crafted with Passion & Elegance</h2>
+                <p class="text-rose-200/80 text-sm sm:text-base leading-relaxed">Specialized in custom designer blouses, churidars, frocks, skirts, and festive bridal outfits.</p>
+                
+                <div class="flex flex-wrap gap-3 justify-center md:justify-start pt-2">
+                    <a href="#calculator" class="bg-rose-600 hover:bg-rose-700 text-white text-xs sm:text-sm font-semibold px-5 py-2.5 rounded-xl shadow-lg transition">
+                        <i class="fa-solid fa-calculator mr-1.5"></i> Fabric Length Calculator
+                    </a>
+                    <a href="#payment" class="bg-white/10 hover:bg-white/20 text-white border border-white/20 text-xs sm:text-sm font-semibold px-5 py-2.5 rounded-xl transition">
+                        <i class="fa-solid fa-qrcode mr-1.5"></i> Pay via UPI
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Service Badges Card -->
+            <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/15 w-full md:w-auto min-w-[280px] shadow-2xl text-center md:text-left">
+                <h3 class="text-sm font-semibold text-rose-200 uppercase tracking-wider mb-4 border-b border-white/10 pb-2">Why Choose Us?</h3>
+                <ul class="space-y-3 text-xs sm:text-sm text-rose-100">
+                    <li class="flex items-center gap-2 justify-center md:justify-start">
+                        <i class="fa-solid fa-check-circle text-emerald-400"></i> Precision Measurement & Fitting
+                    </li>
+                    <li class="flex items-center gap-2 justify-center md:justify-start">
+                        <i class="fa-solid fa-check-circle text-emerald-400"></i> Designer Necklines & Pattern Cuts
+                    </li>
+                    <li class="flex items-center gap-2 justify-center md:justify-start">
+                        <i class="fa-solid fa-check-circle text-emerald-400"></i> Quick Turnaround & On-Time Delivery
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT AREA -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12 flex-grow w-full">
+
+        <!-- FABRIC LENGTH CALCULATOR SECTION -->
+        <section id="calculator" class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-rose-100">
+            <div class="max-w-3xl mx-auto">
+                <div class="text-center mb-8">
+                    <span class="text-rose-600 font-semibold text-xs uppercase tracking-wider">Customer Interactive Tool</span>
+                    <h2 class="serif-title text-2xl sm:text-3xl font-bold text-slate-900 mt-1">Fabric & Material Length Calculator</h2>
+                    <p class="text-slate-500 text-xs sm:text-sm mt-1">Estimate how much cloth material (in meters) you need to purchase before stitching.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 bg-rose-50/50 p-6 rounded-2xl border border-rose-100">
+                    <!-- Garment Type Selection -->
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Select Garment / Outfit</label>
+                        <select id="garmentType" onchange="calculateFabric()" class="w-full bg-white border border-rose-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-rose-500 text-slate-800 font-medium">
+                            <option value="blouse_simple">Simple Saree Blouse (Plain)</option>
+                            <option value="blouse_designer">Designer / Padded Blouse</option>
+                            <option value="churidar_top">Churidar / Kurtis Top</option>
+                            <option value="salwar_set">Full Churidar & Pant Set</option>
+                            <option value="frock_normal">Casual Frock / Anarkali</option>
+                            <option value="skirt_half">Half Saree Skirt / Lehenga</option>
+                            <option value="kids_frock">Kids Frock / Dress</option>
+                        </select>
+                    </div>
+
+                    <!-- Size / Fit Selection -->
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Customer Size & Height Category</label>
+                        <select id="sizeCategory" onchange="calculateFabric()" class="w-full bg-white border border-rose-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-rose-500 text-slate-800 font-medium">
+                            <option value="1">Standard (S / M Size)</option>
+                            <option value="1.2">Large (L / XL Size)</option>
+                            <option value="1.4">Plus Size (2XL+ Size)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Calculation Result Box -->
+                <div class="mt-6 bg-gradient-to-r from-rose-900 to-slate-900 text-white rounded-2xl p-6 text-center shadow-md">
+                    <p class="text-xs text-rose-300 font-medium uppercase tracking-wider">Estimated Fabric Required</p>
+                    <div class="text-3xl sm:text-4xl font-extrabold text-amber-300 mt-1" id="resultLength">1.0 Meter</div>
+                    <p class="text-xs text-rose-200/80 mt-2" id="fabricNote">*Note: Standard cloth width (44 inches). For lining fabric, match the same length as calculated.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- STITCHING SERVICES & CATALOGUE -->
+        <section class="space-y-6">
+            <div class="text-center">
+                <span class="text-rose-600 font-semibold text-xs uppercase tracking-wider">Featured Specialty</span>
+                <h2 class="serif-title text-2xl sm:text-3xl font-bold text-slate-900 mt-1">Princess Cut Blouse Custom Stitching</h2>
+                <p class="text-slate-500 text-xs sm:text-sm mt-1 max-w-2xl mx-auto">Get seamless shape, structured cup padding, and flawless fit tailored precisely to your body measurements.</p>
+            </div>
+
+            <!-- PRINCESS CUT SPECIAL FEATURE CARD -->
+            <div class="bg-gradient-to-br from-rose-900 via-slate-900 to-rose-950 text-white rounded-3xl p-6 sm:p-8 shadow-xl border border-rose-800">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                    <div class="space-y-4">
+                        <span class="bg-amber-400/20 text-amber-300 border border-amber-400/30 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider inline-block">Popular Choice</span>
+                        <h3 class="serif-title text-2xl sm:text-4xl font-bold text-rose-50">Why Choose Princess Cut Blouses?</h3>
+                        <p class="text-rose-200/90 text-xs sm:text-sm leading-relaxed">
+                            Unlike traditional darted blouses, the Princess Cut features smooth continuous seam lines extending from the armhole or shoulder down to the waist. This gives an elegant shape without uncomfortable tightness or unnatural bulges.
+                        </p>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-xs">
+                            <div class="flex items-center gap-2 bg-white/10 p-2.5 rounded-xl border border-white/10">
+                                <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i>
+                                <span>Padded / Non-Padded Option</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-white/10 p-2.5 rounded-xl border border-white/10">
+                                <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i>
+                                <span>Boat Neck / Deep Back Cuts</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-white/10 p-2.5 rounded-xl border border-white/10">
+                                <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i>
+                                <span>Contrast Piping & Dori</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-white/10 p-2.5 rounded-xl border border-white/10">
+                                <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i>
+                                <span>Side/Back Zip or Hook Closure</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-2 flex flex-wrap gap-3">
+                            <a href="https://wa.me/919745201730?text=Hello%20Monalisa%20Ladies%20Stitches,%20I%20would%20like%20to%20order%20a%20Princess%20Cut%20Blouse.%0A" target="_blank" class="bg-emerald-500 hover:bg-emerald-600 text-white text-xs sm:text-sm font-semibold px-5 py-2.5 rounded-xl shadow-md transition flex items-center gap-2">
+                                <i class="fa-brands fa-whatsapp text-base"></i> Book Princess Cut Stitching
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Princess Cut Neck & Sleeves Variation Grid -->
+                    <div class="bg-white/5 p-6 rounded-2xl border border-white/10 space-y-4">
+                        <h4 class="text-sm font-bold text-amber-300 uppercase tracking-wider border-b border-white/10 pb-2">Customization Options Available</h4>
+                        
+                        <div class="space-y-3 text-xs text-rose-100">
+                            <div>
+                                <span class="font-semibold text-white block">1. Neckline Style:</span>
+                                <p class="text-rose-200/80">Boat Neck, Sweetheart Neck, Potli Button Neck, Deep V-Neck, Oval Back Cut-out.</p>
+                            </div>
+                            <div>
+                                <span class="font-semibold text-white block">2. Sleeve Patterns:</span>
+                                <p class="text-rose-200/80">Elbow Length with Zari Border, Puff Sleeves, Cap Sleeves, Sleeveless with Piping.</p>
+                            </div>
+                            <div>
+                                <span class="font-semibold text-white block">3. Padding & Support:</span>
+                                <p class="text-rose-200/80">Imported soft bra cups stitched internally for seamless saree draping.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NEW ARRIVAL SHOWCASE: BOTTLE GREEN STRIPED PRINCESS CUT BLOUSE -->
+            <div class="bg-white rounded-3xl p-6 sm:p-8 border border-emerald-200 shadow-md relative overflow-hidden">
+                <div class="absolute -right-12 -top-12 w-32 h-32 bg-emerald-50 rounded-full blur-xl pointer-events-none"></div>
+
+                <div class="flex flex-wrap items-center justify-between border-b border-rose-100 pb-4 mb-6 gap-2">
+                    <div class="flex items-center gap-2">
+                        <span class="bg-emerald-600 text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm flex items-center gap-1">
+                            <i class="fa-solid fa-sparkles text-amber-300"></i> NEW DESIGN
+                        </span>
+                        <span class="bg-rose-100 text-rose-800 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Princess Cut Exclusive</span>
+                    </div>
+                    <a href="https://wa.me/919745201730?text=Hello%20Monalisa%20Ladies%20Stitches,%20I%20am%20interested%20in%20inquiring%20about%20the%20New%20Bottle%20Green%20Striped%20Princess%20Cut%20Blouse%20design%20with%20embroidered%20border.%0A" target="_blank" class="inline-flex items-center gap-1.5 bg-emerald-600 hover:bg-emerald-700 text-white font-medium text-xs sm:text-sm px-4 py-2.5 rounded-xl shadow-sm transition">
+                        <i class="fa-brands fa-whatsapp text-base"></i> Inquire for this Design
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <!-- Design Details & Specifications -->
+                    <div class="space-y-4">
+                        <h3 class="serif-title text-2xl sm:text-3xl font-bold text-slate-900 leading-snug">Bottle Green Striped Princess Cut Blouse</h3>
+                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                            A stunning boutique creation rendered in deep bottle green with fine vertical pinstripes. Highlighted by rich gold and rust embroidered ethnic borders along the contoured neckline and elbow sleeve cuffs, perfectly complemented with a contrasting red checked saree.
+                        </p>
+                        
+                        <div class="space-y-2.5 text-xs text-slate-700 pt-1">
+                            <div class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-scissors text-rose-600 text-sm"></i>
+                                <span><strong>Pattern & Fitting:</strong> High-Definition Princess Cut for seamless body shape</span>
+                            </div>
+                            <div class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-gem text-rose-600 text-sm"></i>
+                                <span><strong>Neckline & Sleeves:</strong> Intricate Embroidered Temple Border Framing</span>
+                            </div>
+                            <div class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-palette text-rose-600 text-sm"></i>
+                                <span><strong>Styling Pair:</strong> Contrast Red Grid/Check Silk Saree</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-2 flex flex-wrap gap-2">
+                            <span class="bg-slate-100 text-slate-700 text-[11px] font-medium px-3 py-1 rounded-lg border border-slate-200">Custom Padding Available</span>
+                            <span class="bg-slate-100 text-slate-700 text-[11px] font-medium px-3 py-1 rounded-lg border border-slate-200">Elbow Length Sleeves</span>
+                            <span class="bg-slate-100 text-slate-700 text-[11px] font-medium px-3 py-1 rounded-lg border border-slate-200">Perfect Saree Draping</span>
+                        </div>
+                    </div>
+
+                    <!-- Visual Representation Card -->
+                    <div class="bg-gradient-to-br from-emerald-950 via-slate-900 to-rose-950 p-6 rounded-2xl text-white text-center flex flex-col items-center justify-center border border-emerald-800 shadow-lg min-h-[240px] relative">
+                        <div class="w-16 h-16 rounded-full bg-emerald-500/20 border border-emerald-400/40 text-amber-300 flex items-center justify-center text-3xl mb-3 shadow-inner">
+                            <i class="fa-solid fa-shirt"></i>
+                        </div>
+                        <h4 class="font-bold text-lg text-rose-100">Bottle Green & Red Contrast Pair</h4>
+                        <p class="text-xs text-emerald-200/80 mt-1.5 max-w-xs leading-relaxed">Pinstripes with heavy border neck finishing and matching saree contrast piping.</p>
+                        <div class="mt-4 flex items-center gap-2 bg-amber-400/20 text-amber-300 text-xs font-semibold px-4 py-1.5 rounded-full border border-amber-400/30">
+                            <i class="fa-solid fa-star text-amber-300"></i> Trending Boutique Collection
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- OTHER STITCHING SERVICES -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-4">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-2xl p-5 border border-rose-100 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-rose-100 text-rose-700 rounded-xl flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-shirt"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-lg mb-1">Katori & Plain Blouses</h3>
+                    <p class="text-slate-600 text-xs leading-relaxed">Daily wear saree blouses with front hook opening, traditional cross-cut, and neat edge finish.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-2xl p-5 border border-rose-100 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-rose-100 text-rose-700 rounded-xl flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-vest flex"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-lg mb-1">Churidars & Kurtis</h3>
+                    <p class="text-slate-600 text-xs leading-relaxed">A-line, Anarkali suits, straight cuts, salwar bottoms, and palazzo pants tailored for everyday comfort.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-2xl p-5 border border-rose-100 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-rose-100 text-rose-700 rounded-xl flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-lg mb-1">Frocks & Lehengas</h3>
+                    <p class="text-slate-600 text-xs leading-relaxed">Custom kids frocks, umbrella lehengas, half sarees, party wear gowns, and family matching outfit stitching.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRINCESS CUT MEASUREMENT GUIDE -->
+        <section class="bg-rose-50/60 rounded-3xl p-6 sm:p-8 border border-rose-200/80">
+            <div class="max-w-3xl mx-auto text-center space-y-4">
+                <span class="text-rose-600 font-semibold text-xs uppercase tracking-wider">Self Measurement Help</span>
+                <h2 class="serif-title text-2xl sm:text-3xl font-bold text-slate-900">Princess Cut Measurement Checklist</h2>
+                <p class="text-slate-600 text-xs sm:text-sm">When sending your measurements online via WhatsApp, please share these key details for a perfect fitting:</p>
+
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2 text-left">
+                    <div class="bg-white p-3 rounded-xl border border-rose-100 shadow-sm text-xs">
+                        <span class="font-bold text-rose-950 block">1. Bust Size</span>
+                        <span class="text-slate-500">Full chest circumference</span>
+                    </div>
+                    <div class="bg-white p-3 rounded-xl border border-rose-100 shadow-sm text-xs">
+                        <span class="font-bold text-rose-950 block">2. Underbust</span>
+                        <span class="text-slate-500">Waist measurement</span>
+                    </div>
+                    <div class="bg-white p-3 rounded-xl border border-rose-100 shadow-sm text-xs">
+                        <span class="font-bold text-rose-950 block">3. Blouse Length</span>
+                        <span class="text-slate-500">Shoulder to waist line</span>
+                    </div>
+                    <div class="bg-white p-3 rounded-xl border border-rose-100 shadow-sm text-xs">
+                        <span class="font-bold text-rose-950 block">4. Sleeve & Arm</span>
+                        <span class="text-slate-500">Length & round circumference</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- UPI PAYMENT DISPLAY BOX -->
+        <section id="payment" class="bg-white rounded-3xl p-6 sm:p-8 border border-rose-200 shadow-md">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <span class="bg-emerald-100 text-emerald-800 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Fast & Direct</span>
+                    <h2 class="serif-title text-2xl sm:text-3xl font-bold text-slate-900 mt-2">UPI Payment Helper</h2>
+                    <p class="text-slate-600 text-xs sm:text-sm mt-2 leading-relaxed">Pay advance stitching charges or final bill directly using any UPI App (Google Pay, PhonePe, Paytm, BHIM).</p>
+                    
+                    <div class="mt-6 bg-slate-50 border border-slate-200 p-4 rounded-xl space-y-2">
+                        <div class="text-xs text-slate-500 uppercase font-semibold">Receiver UPI ID</div>
+                        <div class="flex items-center justify-between bg-white border border-slate-300 px-3 py-2 rounded-lg">
+                            <span id="upiIdText" class="font-mono text-sm font-bold text-slate-800">sulatharajendran33@okaxis</span>
+                            <button onclick="copyUPI()" class="text-rose-600 hover:text-rose-800 text-xs font-semibold flex items-center gap-1">
+                                <i class="fa-regular fa-copy"></i> Copy
+                            </button>
+                        </div>
+                        <p class="text-[11px] text-slate-400">Account Name: Sulatha Rajendran</p>
+                    </div>
+                </div>
+
+                <!-- Generated QR Code Helper -->
+                <div class="bg-rose-50 border border-rose-200 rounded-2xl p-6 text-center space-y-4">
+                    <h3 class="text-sm font-bold text-slate-800">Scan to Pay via UPI</h3>
+                    <div class="bg-white p-4 rounded-xl inline-block shadow-sm border border-slate-200">
+                        <!-- Dynamic UPI QR Placeholder -->
+                        <img id="upiQrCode" src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=upi://pay?pa=sulatharajendran33@okaxis&pn=Sulatha%20Rajendran" alt="UPI QR Code" class="w-44 h-44 mx-auto">
+                    </div>
+                    <p class="text-xs text-slate-500">Scan with GPay, PhonePe, or Paytm</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- STORE LOCATION & MAP DIRECTIONS SECTION -->
+        <section id="location" class="bg-white rounded-3xl p-6 sm:p-8 border border-rose-100 shadow-sm">
+            <div class="text-center mb-8">
+                <span class="text-rose-600 font-semibold text-xs uppercase tracking-wider">Visit Our Shop</span>
+                <h2 class="serif-title text-2xl sm:text-3xl font-bold text-slate-900 mt-1">Store Location & Directions</h2>
+                <p class="text-slate-500 text-xs sm:text-sm mt-1">Drop by our boutique for direct fittings, fabric consultations, and custom order requests.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+                <!-- Location Details Card -->
+                <div class="bg-gradient-to-br from-rose-50 to-orange-50/50 p-6 rounded-2xl border border-rose-200/80 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-rose-600 text-white flex items-center justify-center text-lg shadow-sm">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-900 text-base">Monalisa Ladies Stitches</h3>
+                                <p class="text-xs text-rose-600 font-medium">Boutique & Tailoring Centre</p>
+                            </div>
+                        </div>
+
+                        <div class="space-y-2 text-xs text-slate-600 pt-2 border-t border-rose-200/60">
+                            <p class="flex items-start gap-2">
+                                <i class="fa-solid fa-map-pin text-rose-500 mt-0.5"></i>
+                                <span>Custom Tailoring, Blouse & Churidar Design Unit</span>
+                            </p>
+                            <p class="flex items-center gap-2">
+                                <i class="fa-solid fa-clock text-rose-500"></i>
+                                <span>Open Monday - Saturday: 9:00 AM - 7:00 PM</span>
+                            </p>
+                            <p class="flex items-center gap-2">
+                                <i class="fa-solid fa-phone text-rose-500"></i>
+                                <span>+91 9745201730</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="pt-6">
+                        <a href="https://share.google/RvReWyiTpkTE8bprK" target="_blank" class="w-full bg-rose-600 hover:bg-rose-700 text-white font-semibold text-xs sm:text-sm py-3 px-4 rounded-xl shadow-md transition flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-diamond-turn-right text-base"></i> Open in Google Maps
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Interactive Map Link Preview Box -->
+                <div class="bg-slate-900 text-white p-6 rounded-2xl flex flex-col items-center justify-center text-center space-y-4 relative overflow-hidden group">
+                    <div class="w-16 h-16 bg-rose-500/20 text-amber-300 rounded-full flex items-center justify-center text-2xl border border-rose-500/40">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-base text-rose-100">Find Us on Google Maps</h4>
+                        <p class="text-xs text-slate-400 mt-1 max-w-xs mx-auto">Click below to open direct GPS navigation route right to our shop door.</p>
+                    </div>
+                    <a href="https://share.google/RvReWyiTpkTE8bprK" target="_blank" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white text-xs font-medium px-4 py-2.5 rounded-xl border border-white/20 transition">
+                        <span>Get Driving Directions</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- QUICK DIRECT ACTION CALLOUT -->
+        <section class="bg-gradient-to-r from-rose-800 to-rose-950 text-white rounded-3xl p-6 sm:p-10 text-center space-y-4 shadow-xl">
+            <h2 class="serif-title text-2xl sm:text-3xl font-bold">Have Questions or Need Measurement Guidance?</h2>
+            <p class="text-rose-200 text-xs sm:text-sm max-w-lg mx-auto">Reach out to us directly on WhatsApp or follow us on Instagram for latest design updates and custom orders.</p>
+            
+            <div class="flex flex-wrap justify-center gap-4 pt-2">
+                <a href="https://wa.me/919745201730" target="_blank" class="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold text-sm px-6 py-3 rounded-xl shadow-md transition flex items-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> Chat on WhatsApp (9745201730)
+                </a>
+                <a href="https://instagram.com/sulathaaaa___" target="_blank" class="bg-white text-rose-950 hover:bg-rose-50 font-semibold text-sm px-6 py-3 rounded-xl shadow-md transition flex items-center gap-2">
+                    <i class="fa-brands fa-instagram text-lg text-pink-600"></i> Follow @sulathaaaa___
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-slate-400 py-8 border-t border-slate-800 mt-auto">
+        <div class="max-w-6xl mx-auto px-4 text-center sm:flex sm:justify-between sm:text-left text-xs space-y-4 sm:space-y-0">
+            <div>
+                <p class="font-bold text-white text-sm">Monalisa Ladies Stitches</p>
+                <p class="text-slate-500 mt-1">Quality Custom Tailoring & Designer Boutique Services.</p>
+            </div>
+            <div class="text-slate-500">
+                <p>Contact: +91 9745201730</p>
+                <p>UPI ID: sulatharajendran33@okaxis</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // Fabric Length Estimator Logic
+        function calculateFabric() {
+            const garment = document.getElementById("garmentType").value;
+            const sizeMultiplier = parseFloat(document.getElementById("sizeCategory").value);
+            
+            let baseMeters = 1.0;
+            let note = "*Note: Standard cloth width (44 inches). For lining fabric, match the same length as calculated.";
+
+            switch (garment) {
+                case 'blouse_simple':
+                    baseMeters = 0.8;
+                    break;
+                case 'blouse_designer':
+                    baseMeters = 1.0;
+                    break;
+                case 'churidar_top':
+                    baseMeters = 2.0;
+                    break;
+                case 'salwar_set':
+                    baseMeters = 4.0;
+                    note = "*Note: Approx. 2.0 to 2.25 meters for Top and 2.0 meters for Bottom.";
+                    break;
+                case 'frock_normal':
+                    baseMeters = 3.0;
+                    break;
+                case 'skirt_half':
+                    baseMeters = 3.5;
+                    break;
+                case 'kids_frock':
+                    baseMeters = 1.5;
+                    note = "*Note: For kids below 10 years.";
+                    break;
+            }
+
+            const totalMeters = (baseMeters * sizeMultiplier).toFixed(1);
+            document.getElementById("resultLength").innerText = `${totalMeters} Meters`;
+            document.getElementById("fabricNote").innerText = note;
+        }
+
+        // Copy UPI ID to Clipboard
+        function copyUPI() {
+            const upiId = document.getElementById("upiIdText").innerText;
+            const tempInput = document.createElement("input");
+            tempInput.value = upiId;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+            alert("UPI ID copied to clipboard: " + upiId);
+        }
+    </script>
+</body>
+</html>
